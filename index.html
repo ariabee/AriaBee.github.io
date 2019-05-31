@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<!-- add a fixed background image to form and index page -->
+<html lang="en"       class="indexBackground">
+      
+    <head>
+        <!-- can add php code here to print a different title on each page -->
+        <title>Perspectives</title>
+
+        <meta charset="utf-8">
+        <meta name="robots" content="noindex">
+        <meta name="author" content="AriaRay Brown">
+        <meta name="description" content="Explore the creative endeavors of
+              Yara Ira in the form of art, photography, writing, food and more">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        
+        <link rel="shortcut icon" type="image/ico" href="images/favicon.png">
+        <link rel="stylesheet" href="css/custom.css" type="text/css" media="screen">
+        
+                
+    
+<!-- include libraries -->
+
+<!--  BEGIN include security -->
+
+<!--  END include security -->
+
+<!--  BEGIN include validation-functions -->
+
+<!--  END include validation-functions -->
+
+<!--  BEGIN include mail-message       -->
+
+<!--  END include mail-message -->
+
+<!-- finished including libraries -->
+                
+    </head>
+
+    <body id="index">
+<!--############################# Body Section ##############################-->
+
+<!--########################### Start of Header #############################-->
+<header>
+    <figure><img src="images/logo.png" alt="site logo" class="logo"></figure>
+    <h1 class="heading"><a href="index.php">Perspectives: A Creative Portfolio</a></h1>
+    
+        
+</header>
+<!--############################ End of Header ##############################-->
+<!--############################# Start of Nav ##############################-->
+<nav>
+    <button id="nav" class="collapsible"> 
+        <img src="images/nav.png" alt="navigation menu button" class="btnNav">
+    </button>
+    <ul class="content">
+        <li class="activePage"><a href="index.php">about</a></li><li class=""><a href="art.php">art</a></li><li class=""><a href="food.php">food</a></li><li class=""><a href="photography.php">photography</a></li><li class=""><a href="words.php">words</a></li><li class=""><a href="form.php">inquire</a></li>    </ul>
+</nav>
+
+<!--############################## End of Nav ###############################-->
+    
+    <!--*****************************************************************-->
+    <!--********************** javascript collapsible content ***********-->
+    <!--*from: https://www.w3schools.com/howto/howto_js_collapsible.asp**-->
+    <!--*****************************************************************-->
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight) {
+                    content.style.maxHeight = null;
+                } else {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                }
+            });
+        }
+    </script> <!-- end collapsible content -->
+    
+    <!-- End of top.php -->
+<!--############################# Main Section ##############################-->
+<main>
+    
+    <h1 class="col-5 titleInline">About</h1>
+    
+    <p class="col-5 pInline">Welcome to the creative portfolio of 
+        <a href=#contact>Yara Ira</a>. Have a look at 
+        <a href=#projects>things created</a>.</p>
+    
+    <!-- project links -->
+    <ul id="projectLinks" class="center col-12">
+        <li><a href="art.php"><figure><img src="images/previews/art.jpg" alt="art pojects">
+                    <figcaption>art</figcaption></figure></a></li>
+        
+        <li><a href="food.php"><figure><img src="images/previews/food.jpg" alt="food projects">
+                    <figcaption>food</figcaption></figure></a></li>
+        
+        <li><a href="photography.php"><figure><img src="images/previews/photography.jpg" alt="photo pojects">
+                    <figcaption>photography</figcaption></figure></a></li>
+        
+        <li><a href="words.php"><figure><img id="imgWords" src="images/previews/words.png" alt="words pojects">
+                    <figcaption>words</figcaption></figure></a></li>
+    </ul> <!-- end project links -->
+    
+    <!-- about us -->
+    <section id="aboutUs" class="center">
+        <article id="contact" class="col-5 floatLeft">
+            
+            <h2 class="center centerText">Yara Ira</h2>
+            <figure id="yaraIraImg"><img src="images/yaraIra.jpg" alt="Yara Ira"></figure>
+            <p>I'm Yara Ira. Welcome to my creative portfolio!</p>
+
+        </article>
+
+        <article id="developer" class="col-5 floatLeft">
+            
+            <h2 class="center centerText">AriaRay Brown</h2>
+            <figure><img src="images/me-melon.png" alt="AriaRay Brown"></figure>
+            <p>Site developer and designer AriaRay had never before <span title="File Transfer Protocol, a way of transferring files between computers">FTPed</span> files so many times in one sitting, until Yara Ira came along. Yara's fictional offer to allow Aria to practice website building coupled with a required website final project has launched this new designer into affiliated Yara Ira Fame. Special thanks to CS008 and Professor Erickson. Find AriaRay on the web or in person doing other great or fictional things!
+            </p>
+        </article> <!-- end about us -->
+    </section>
+</main>
+
+
+<!--########################### Start of Footer #############################-->
+<footer class="center">
+    <p>&copy; 2018 AriaRay Brown</p>
+</footer>
+<!--############################ End of Footer ##############################-->
+
+
+
+</body>
+</html>
