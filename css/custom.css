@@ -8,10 +8,10 @@
 /***********************/
 
  @import url('https://fonts.googleapis.com/css?family=Open+Sans');
+ @import url('https://fonts.googleapis.com/css?family=Averia+Serif+Libre');
 
  @import url("reset.css");
  /*@import url("bootstrap-snippets.css");*/
-
 
 /**************************************/
 /* SITE CONSTANTS (in progress study) */
@@ -63,9 +63,18 @@ a:hover {}
 
 a:active {}
 
-body {}
+body {
+	margin: 2em;
+    background: linear-gradient(126deg, rgba(199, 92, 0, 0.25), #ff9237);
+    font-family: 'Open Sans', sans-serif;
+}
 
 div.content {}
+
+h1 {
+	font-family: 'Averia Serif Libre', cursive;
+	font-size: 40px;
+}
 
 
 
