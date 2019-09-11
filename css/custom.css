@@ -84,13 +84,16 @@ h1 {
 header {
   background: white;
   background-image: url(../images/gray-clouds.jpg);
-  padding: 2em 2em 0 2em;
+  background-position: center -181px;
+  background-size: cover;
+  padding: 1em 2em 1em 2em;
   position: sticky;
   top: 0;
   z-index: 1000;
 }
 
 #mainPage {
+  font-size: 24px;
   padding: 2em;
 }
 
