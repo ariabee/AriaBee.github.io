@@ -76,7 +76,7 @@ footer {
   padding: 2em;
 }
 
-h1#name {
+h1#name a.nameLink {
 	font-family: 'Averia Serif Libre', cursive;
 	font-size: 57px;
 }
