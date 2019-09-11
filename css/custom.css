@@ -63,6 +63,13 @@ a:hover {}
 
 a:active {}
 
+a.nameLink {
+  color: white;
+  font-family: 'Averia Serif Libre', cursive;
+  font-size: 57px;
+  text-decoration: none; 
+}
+
 body {
   /*background: linear-gradient(126deg, rgba(199, 92, 0, 0.25), #ff9237);*/
   font-family: 'Open Sans', sans-serif;
@@ -76,10 +83,8 @@ footer {
   padding: 2em;
 }
 
-h1#name a.nameLink {
-	font-family: 'Averia Serif Libre', cursive;
-	font-size: 57px;
-  text-decoration: none; 
+h1#name {
+  text-shadow: -2px 6px 9px rgb(107, 107, 107);
 }
 
 header {
@@ -101,6 +106,39 @@ header {
 ul#subtitles li {
   display: inline;
   font-style: italic;
+}
+
+
+/**************/
+/* NAVIGATION */
+/**************/
+
+.mainNav {
+  list-style-type: none;
+}
+
+.mainNav li {
+  text-align: center;
+  margin: 15px auto;
+}
+.logo {
+  display: inline-block;
+  font-size: 22px;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.navbar{
+  font-size: 18px;
+  background-image: linear-gradient(260deg, #2376ae 0%, #c16ecf   100%);
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding-bottom: 10px;
+}
+
+.navLinks,
+.logo {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.7);
 }
 
 
