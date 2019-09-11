@@ -76,9 +76,9 @@ footer {
   padding: 2em;
 }
 
-h1 {
+h1#name {
 	font-family: 'Averia Serif Libre', cursive;
-	font-size: 40px;
+	font-size: 57px;
 }
 
 header {
