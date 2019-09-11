@@ -64,16 +64,39 @@ a:hover {}
 a:active {}
 
 body {
-	margin: 2em;
-    background: linear-gradient(126deg, rgba(199, 92, 0, 0.25), #ff9237);
-    font-family: 'Open Sans', sans-serif;
+	background-image: url(../images/gray-clouds.jpg);
+  /*background: linear-gradient(126deg, rgba(199, 92, 0, 0.25), #ff9237);*/
+  font-family: 'Open Sans', sans-serif;
 }
 
 div.content {}
 
+footer {
+  background: #a9a9a94f;
+  color: #8a8a8a;
+  padding: 2em;
+}
+
 h1 {
 	font-family: 'Averia Serif Libre', cursive;
 	font-size: 40px;
+}
+
+header {
+  background: white;
+  padding: 2em 2em 0 2em;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+#mainPage {
+  padding: 2em;
+}
+
+ul#subtitles li {
+  display: inline;
+  font-style: italic;
 }
 
 
