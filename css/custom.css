@@ -79,6 +79,7 @@ footer {
 h1#name a.nameLink {
 	font-family: 'Averia Serif Libre', cursive;
 	font-size: 57px;
+  text-decoration: none; 
 }
 
 header {
