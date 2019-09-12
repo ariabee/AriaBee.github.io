@@ -3,7 +3,7 @@
   * AriaRay Brown, 9-2019
   */
 
-function toggleNavBar() {  
+//function toggleNavBar() {
 	
 	let mainNav = document.getElementById('js-menu');
 	let navBarToggle = document.getElementById('js-navbar-toggle');
@@ -12,5 +12,5 @@ function toggleNavBar() {
 	    
 	    mainNav.classList.toggle('active');
 	});
-}
+//}
 
