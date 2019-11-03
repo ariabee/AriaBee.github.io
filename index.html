@@ -21,7 +21,7 @@
     <!-- Font Awesome kit -->
     <script src="https://kit.fontawesome.com/ce124eb7b1.js"></script>
 
-     <!-- jQuery -->
+    <!-- jQuery -->
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
 
     <!-- JavaScript functions -->
@@ -30,32 +30,77 @@
   </head>
 
   
-  <body id="page-top">
+  <body id="pageTop">
     <div id="content">
 
-    <!-- Navigation -->
-  	<nav class="navbar">
+    <!-- Header -->	
+    <header>
+    	<nav class="navBar flexBox">
 
-  		<span class="navbarToggle" id="js-navbar-toggle">
-              <i class="fas fa-bars"></i>
-      </span>
-      <a href="/" class="logo">AriaRay Brown</a>
-      <ul class="mainNav" id="js-menu">
-          <li>
-              <a href="#" class="navLinks">Projects</a>
-          </li>
-          <li>
-              <a href="#" class="navLinks">About</a>
-          </li>
-          <li>
-              <a href="#" class="navLinks">Contact</a>
-          </li>
-      </ul>
-  	</nav>
+        <!-- Logo -->
+        <div class="headerLogoContainer">
+          <h1 id="headerLogo" class=".logo">AriaRay Brown</h1>
+        </div>
 
+        <!-- Desktop Navigation -->
+        <ul class="mainNav navList">
+            <li>
+                <a href="/projects" class="navLinks">Projects</a>
+            </li>
+            <li>
+                <a href="/hello" class="navLinks">About</a>
+            </li>
+            <li>
+                <a href="/contact" class="navLinks">Contact</a>
+            </li>
+            <li>
+                <a href="/resume-AriaRay-Brown.pdf" class="navLinks">Resume</a>
+            </li>
+        </ul>
+
+        <!-- Mobile Navigation -->
+        <button class="mobileNavToggle collapsible">
+          <i class="fas fa-bars"></i>
+        </button>
+    		
+		<ul class="mobileNav navList collapsibleContent">
+          <li>
+              <a href="/projects" class="navLinks">Projects</a>
+          </li>
+          <li>
+              <a href="/hello" class="navLinks">About</a>
+          </li>
+          <li>
+              <a href="/contact" class="navLinks">Contact</a>
+          </li>
+          <li>
+              <a href="/resume-AriaRay-Brown.pdf" class="navLinks">Resume</a>
+          </li>
+		</ul>
+
+		<!-- collapisble inspo from: https://www.w3schools.com/howto/howto_js_collapsible.asp -->
+		<script>
+	        var coll = document.getElementsByClassName("collapsible"); // coll stores a list of elements
+	        var i;
+
+	        for (i = 0; i < coll.length; i++) { // loop through all collapsible elements
+	            coll[i].addEventListener("click", function () {
+	                this.classList.toggle("active");
+	                var content = this.nextElementSibling; // this should be its .collabsibleContent sibling
+	                if (content.style.maxHeight) {
+	                    content.style.maxHeight = null;
+	                } else {
+	                    content.style.maxHeight = content.scrollHeight + "px";
+	                }
+	            });
+	        }
+	    </script>
+
+    	</nav>
+	</header>
 
     <!-- Header -->
-    <header class="col-12">
+<!--     <header class="col-12">
       <div class="container">
          <h1 id="name"><a class="nameLink" href="/">AriaRay Brown</a></h1>
          <ul class="container" id="subtitles">
@@ -64,10 +109,35 @@
             <li>Developer</li>
          </ul>
       </div>
-    </header>
+    </header> -->
 
     <!-- Main Page Content -->
-    <div id="mainPage">
+    <main>
+
+    	<!-- Sub Header -->
+    	<section id=subHeader>
+    		<h1>AriaRay Brown</h1>
+    		<div class="miniAbout">
+    			<p>Welcome to my collection of creative puzzles and pursuits. Click the links below to explore projects, view my resume, read more about me, or contact me with a message. *End temporary message fade-out testing!*</p>
+    		</div>
+    		<nav class="miniNav iconsNav">
+    			<ul class="iconsNavList">
+    				<li>
+		              	<a href="/projects" class="iconLink">P</a>
+		          	</li>
+		          	<li>
+		          	    <a href="/hello" class="iconLink">A</a>
+		          	</li>
+		          	<li>
+		           	   <a href="/contact" class="iconLink">C</a>
+		          	</li>
+		          	<li>
+		           	   <a href="/resume-AriaRay-Brown.pdf" class="iconLink">R</a>
+		          	</li>
+    			</ul>
+    		</nav>
+    	</section>
+
 
       <!-- View Projects Banner -->
       <section id="projectsBanner">
@@ -120,29 +190,29 @@
           </div>
         </div>
       </section>
-    </div>
+    </main>
 
     <!-- Footer -->
     <footer>
-      <div class="container">
+      <div class="socialIconsContainer flexBox">
         
         <ul>
-          <li class="social-icon">
-            <a class="icon-social-email" href="#"></a>
+          <li class="socialIcon">
+            <a class="iconSocialEmail" href="#"></a>
           </li>
-          <li class="social-icon">
-            <a class="icon-social-github" href="#"></a>
+          <li class="socialIcon">
+            <a class="iconSocialGithub" href="#"></a>
           </li>
-          <li class="social-icon">
-            <a class="icon-social-instagram" href="#"></a>
+          <li class="socialIcon">
+            <a class="iconSocialInstagram" href="#"></a>
           </li>
-          <li class="social-icon">
-            <a class="icon-social-facebook" href="#"></a>
+          <li class="socialIcon">
+            <a class="iconSocialFacebook" href="#"></a>
           </li>
         </ul>
         
       </div>
-      <p>Copyright &copy; AriaRay Brown 2019</p>
+      <p id="copyright">Copyright &copy; AriaRay Brown 2019</p>
     </footer>
   
   </div>

@@ -9,6 +9,7 @@
 
  @import url('https://fonts.googleapis.com/css?family=Open+Sans');
  @import url('https://fonts.googleapis.com/css?family=Averia+Serif+Libre');
+ @import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great&display=swap');
 
  @import url("reset.css");
  /*@import url("bootstrap-snippets.css");*/
@@ -45,6 +46,8 @@
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
+  --h1-font: 'Fredericka the Great', sans-serif;
+  --p-font: 'Open Sans', sans-serif;
 }
 
 /***************/
@@ -78,9 +81,13 @@ body {
 div.content {}
 
 footer {
-  background: #a9a9a94f;
-  color: #8a8a8a;
-  padding: 2em;
+  background: #464040;
+  -webkit-box-shadow: 0px -1px 5px 0px rgba(0,0,0,0.35);
+  box-shadow: 0px -1px 5px 0px rgba(0,0,0,0.35);
+  color: #eee;
+  font-family: var(--h1-font);
+  font-size: .75em;
+  padding: 1em; 
 }
 
 h1#name {
@@ -88,20 +95,27 @@ h1#name {
 }
 
 header {
-  background: white;
-  background-image: url(../images/gray-clouds.jpg);
-  background-position: center -181px;
-  background-size: cover;
-  padding: 1em 2em 1em 2em;
+  background: #91ab77;
+  background-image: url(../images/medina-color1.jpg);
+  background-position: center -14px;  background-size: cover;
+  -webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.35);
+  box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.35);
   position: sticky;
   top: 0;
   z-index: 1000;
+}
+
+main {
+  transition: all 300ms ease-in-out;
 }
 
 #mainPage {
   font-size: 24px;
   padding: 2em;
 }
+
+p#copyright {text-align: center;}
+
 
 ul#subtitles li {
   display: inline;
@@ -113,11 +127,37 @@ ul#subtitles li {
 /* NAVIGATION */
 /**************/
 
-.active {
-  display: block;
+.active, .mobileNavToggle:hover {
+    opacity: 0.5;
 }
 
-.mainNav {
+.collapsible {
+    /*position: absolute;
+    top: 10px;
+    right: 20px;*/
+
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    outline: none;
+    background: none;
+    line-height: normal;
+    align-self: center;
+    z-index: 98;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    outline: 0;
+}
+
+.collapsibleContent {
+    word-wrap: break-word;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .3s cubic-bezier(0.39, 0.58, 0.57, 1);
+}
+
+/*.mainNav {
   list-style-type: none;
   display: none;
 }
@@ -125,49 +165,96 @@ ul#subtitles li {
 .mainNav li {
   text-align: center;
   margin: 15px auto;
+}*/
+
+#headerLogo {
+ 	color: #ffffff;
+  font-size: 1.2em;
+  font-family: 'Fredericka the Great';
 }
 
-.logo {
+.headerLogoContainer {
   display: inline-block;
-  font-size: 22px;
-  margin-top: 10px;
-  margin-left: 20px;
+  margin: 10px;
+  width: calc(100% - 40px);
+  -ms-flex-item-align: center;
+  -webkit-align-self: center;
+  align-self: center;
 }
 
-.navbar{
-  font-size: 18px;
-  background-image: linear-gradient(260deg, #2376ae 0%, #c16ecf   100%);
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  padding-bottom: 10px;
+.mobileNav.active {
+ 	font-size: 2em;
+ 	padding: 1em;
+ 	text-align: center;
 }
 
-.navbarToggle {
-    position: absolute;
-    top: 10px;
-    right: 20px;
-    cursor: pointer; 
-    color: rgba(255,255,255,0.8);
-    font-size: 24px;
+.mainNav, .mobileNav {
+}
+
+.mainNav {
+ 	display: none;
+}
+
+.mobileNav {
+  position: absolute;
+  background: #464040;
+  width: 100%;
+  text-align: center;
+}
+
+.mobileNav li {
+	padding: 1.5em;
+	font-size: 1.5em;
+}
+
+.navBar {
+}
+
+.mobileNavToggle {
+  color: #ffffff;
+  display: inline-block;
+  font-size: 1.2em;
+  margin: 5px;
+  text-shadow: 0px 1px 3px #343a40;
+  -ms-flex-item-align: center;
+  -webkit-align-self: center;
+  align-self: center;
+}
+
+.navContent {
 }
 
 .navLinks,
 .logo {
-    text-decoration: none;
-    color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.7);
 }
 
+/*************************************/
+/* STYLE CLASSES                     */
+/* (use class name to style element) */
+/*************************************/
+
+.flexBox {
+  display: flex;
+  flex-wrap: nowrap;
+}
 
 
 /***********************************/
 /* RESPONSIVE LAYOUT MEDIA QUERIES */
 /***********************************/
 
-/* Default for mobile devices */
+/* Default for small mobile devices */
 [class*="col-"] {
     width: 100%;
 }
 
-/* For desktop */
+/* For small devices and up */
+@media only screen and (min-width: 600px) {
+}
+
+/* For medium devices and up */
 @media only screen and (min-width: 768px) {
     .col-1 {width: 8.33%;}
     .col-2 {width: 16.66%;}
@@ -181,6 +268,14 @@ ul#subtitles li {
     .col-10 {width: 83.33%;}
     .col-11 {width: 91.66%;}
     .col-12 {width: 100%;}
+}
+
+/* For large devices and up */
+@media only screen and (min-width: 992px) {
+}
+
+/* For extra large devices and up*/
+@media only screen and (min-width: 1200px) {
 }
 
 
