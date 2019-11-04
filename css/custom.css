@@ -168,14 +168,20 @@ ul#subtitles li {
 }*/
 
 #headerLogo {
- 	color: #ffffff;
-  font-size: 1.2em;
-  font-family: 'Fredericka the Great';
+ 	font-size: 1.2em;
+  font-family: var(--h1-font);
+  color: #ffffff;
+  /*background-image: url(../images/medina-color1.jpg);
+  background-size: contain;
+  background-position: center;
+  background-color: #1f0401;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;*/
 }
 
 .headerLogoContainer {
   display: inline-block;
-  margin: 10px;
+  margin: 1em .75em;
   width: calc(100% - 40px);
   -ms-flex-item-align: center;
   -webkit-align-self: center;
@@ -200,11 +206,16 @@ ul#subtitles li {
   background: #464040;
   width: 100%;
   text-align: center;
+  top: 4.25em;
+  -webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.35);
+  box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.35);
 }
 
 .mobileNav li {
 	padding: 1.5em;
-	font-size: 1.5em;
+	font-size: 1.2em;
+  font-family: var(--h1-font);
+  letter-spacing: 2px;
 }
 
 .navBar {
@@ -214,7 +225,7 @@ ul#subtitles li {
   color: #ffffff;
   display: inline-block;
   font-size: 1.2em;
-  margin: 5px;
+  margin: .75em;
   text-shadow: 0px 1px 3px #343a40;
   -ms-flex-item-align: center;
   -webkit-align-self: center;
