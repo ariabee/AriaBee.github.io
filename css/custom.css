@@ -82,12 +82,10 @@ div.content {}
 
 footer {
   background: #464040;
-  -webkit-box-shadow: 0px -1px 5px 0px rgba(0,0,0,0.35);
-  box-shadow: 0px -1px 5px 0px rgba(0,0,0,0.35);
   color: #eee;
   font-family: var(--h1-font);
   font-size: .75em;
-  padding: 1em; 
+  padding: 3em; 
 }
 
 h1#name {
@@ -96,17 +94,19 @@ h1#name {
 
 header {
   background: #91ab77;
-  background-image: url(../images/medina-color1.jpg);
-  background-position: center -14px;  background-size: cover;
-  -webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.35);
-  box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.35);
+  background-image: url(../images/autumn-leaves.jpg);
+  background-position: center -58px;  
+  background-size: cover;
+  -webkit-box-shadow: 0px -2px 6px 3px rgba(0,0,0,0.35);
+  box-shadow: 0px -2px 6px 3px rgba(0,0,0,0.35);
   position: sticky;
   top: 0;
   z-index: 1000;
 }
 
 main {
-  transition: all 300ms ease-in-out;
+	margin: 2em;
+	transition: all 300ms ease-in-out;
 }
 
 #mainPage {
@@ -168,15 +168,16 @@ ul#subtitles li {
 }*/
 
 #headerLogo {
- 	font-size: 1.2em;
-  font-family: var(--h1-font);
-  color: #ffffff;
-  /*background-image: url(../images/medina-color1.jpg);
-  background-size: contain;
-  background-position: center;
-  background-color: #1f0401;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;*/
+	font-size: 1.2em;
+	font-family: var(--h1-font);
+	color: #ffffff;
+	/*color: #463f3f;
+	background-image: url(../images/medina-color1.jpg);
+	background-size: contain;
+ 	background-position: center;
+	background-color: #1f0401;
+	-webkit-background-clip: text;
+ 	-webkit-text-fill-color: transparent;*/
 }
 
 .headerLogoContainer {
@@ -226,7 +227,7 @@ ul#subtitles li {
   display: inline-block;
   font-size: 1.2em;
   margin: .75em;
-  text-shadow: 0px 1px 3px #343a40;
+  text-shadow: 0px 2px 5px #343a40;  
   -ms-flex-item-align: center;
   -webkit-align-self: center;
   align-self: center;
@@ -241,6 +242,67 @@ ul#subtitles li {
   color: rgba(255, 255, 255, 0.7);
 }
 
+/*************/
+/* SUBHEADER */
+/*************/
+
+#subHeader {
+	margin-bottom: 2em;
+}
+
+#subHeaderName {
+	background-image: url(../images/medina-color1.jpg);
+    background-size: contain;
+    background-position: center;
+    background-color: #1f0401;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    font-size: 2em;
+    font-style: italic;
+    padding: 0 .5em .5em .5em;
+    font-family: var(--h1-font);
+    letter-spacing: 2.5px;
+    color: #463f3f;
+}
+
+#subHeaderName:hover {
+}
+
+.miniAbout {
+	color: #ffffff00;
+    transition: all 600ms ease-in;
+    margin: 0 auto;
+}
+.miniAbout:hover { 
+	color: #463f3f; 
+	background: none;
+	transition: all 300ms ease-in;
+}
+
+.miniAbout p {
+	text-align: center;
+    font-size: .8em;
+    letter-spacing: 1px;
+    line-height: 1.7;
+}
+
+.iconsNav {
+	margin: 0 auto;
+}
+
+.iconsNavList {
+	margin: 0 auto;
+	width:	75%;
+}
+
+.iconsNavList li {
+	display: inline-block;
+	margin: 0 auto;
+}
+
+
+
 /*************************************/
 /* STYLE CLASSES                     */
 /* (use class name to style element) */
@@ -254,6 +316,7 @@ ul#subtitles li {
 
 /***********************************/
 /* RESPONSIVE LAYOUT MEDIA QUERIES */
+/*      (mobile-first design)      */
 /***********************************/
 
 /* Default for small mobile devices */
@@ -263,6 +326,7 @@ ul#subtitles li {
 
 /* For small devices and up */
 @media only screen and (min-width: 600px) {
+	#subHeaderName {font-size: 3em;}
 }
 
 /* For medium devices and up */
