@@ -93,7 +93,7 @@ h1#name {
 }
 
 header {
-  background: #91ab77;
+  background: #000008;
   background-image: url(../images/starry.png);
   background-position: center -58px;  
   background-size: cover;
@@ -105,7 +105,6 @@ header {
 }
 
 main {
-	margin: 2em;
 	transition: all 300ms ease-in-out;
 }
 
@@ -115,12 +114,6 @@ main {
 }
 
 p#copyright {text-align: center;}
-
-
-ul#subtitles li {
-  display: inline;
-  font-style: italic;
-}
 
 
 /**************/
@@ -157,27 +150,10 @@ ul#subtitles li {
     transition: max-height .3s cubic-bezier(0.39, 0.58, 0.57, 1);
 }
 
-/*.mainNav {
-  list-style-type: none;
-  display: none;
-}
-
-.mainNav li {
-  text-align: center;
-  margin: 15px auto;
-}*/
-
 #headerLogo {
 	font-size: 1.2em;
 	font-family: var(--h1-font);
 	color: #ffffff;
-	/*color: #463f3f;
-	background-image: url(../images/medina-color1.jpg);
-	background-size: contain;
- 	background-position: center;
-	background-color: #1f0401;
-	-webkit-background-clip: text;
- 	-webkit-text-fill-color: transparent;*/
 }
 
 .headerLogoContainer {
@@ -246,27 +222,21 @@ ul#subtitles li {
 /* SUBHEADER */
 /*************/
 
-#subHeader {
-	margin-bottom: 2em;
-}
+a.iconLink:link {
+	text-decoration: none;
+	color: #000000;
+	font-weight: bold;
+    letter-spacing: 1.5px;
 
-#subHeaderName {
-    background-image: url(../images/medina-color1.jpg);
-    background-size: contain;
-    background-position: center;
-    background-color: #1f0401;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-align: center;
-    font-size: 2em;
-    font-style: italic;
-    padding: 0 .5em 1.2em .5em;
-    font-family: var(--h1-font);
-    letter-spacing: 2.5px;
-    color: #463f3f;
 }
+a.iconLink:visited {
 
-#subHeaderName:hover {
+}
+a.iconLink:hover {
+
+}
+a.iconLink:active {
+
 }
 
 .miniAbout {
@@ -317,39 +287,82 @@ ul#subtitles li {
 .iconsNavList li:nth-child(3):hover { background-color: #6c724b33; }
 .iconsNavList li:nth-child(4):hover { background-color: #5d676940; }
 
-a.iconLink:link {
-	text-decoration: none;
-	color: #000000;
-	font-weight: bold;
-    letter-spacing: 1.5px;
-
-}
-a.iconLink:visited {
-
-}
-a.iconLink:hover {
-
-}
-a.iconLink:active {
-
-}
-
 .overlay {
 	position: absolute;
-	top: 83px;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	height: 9%;
+	top: 99px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 10%;
 	opacity: 0;
 	transition: all 1s ease;
 	background-color: #ffffff;
+}
+
+#subHeader {
+	margin: 2em;
 }
 
 #subHeader:hover .overlay {
     opacity: 1;
 }
 
+#subHeaderName {
+    background-image: url(../images/medina-color1.jpg);
+    background-size: contain;
+    background-position: center;
+    background-color: #1f0401;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    font-size: 2em;
+    font-style: italic;
+    padding: 0 .5em .2em .5em;
+    font-family: var(--h1-font);
+    letter-spacing: 2.5px;
+    color: #463f3f;
+}
+
+#subHeaderName:hover {
+}
+
+ul#subtitles {
+    text-align: center;
+    margin: .25em 0 1.5em;
+}
+
+ul#subtitles li {
+  	display: inline;
+  	font-style: italic;
+	display: inline;
+	font-style: italic;
+	font-family: var(--h1-font);
+	font-size: 1.2em;
+	padding: .25em;
+}
+
+@media only screen and (max-width: 360px) {
+	#subHeaderName {font-size: 1.6em;}
+	.overlay{top:72px; height: 15%}
+	ul#subtitles li{font-size: 1em;}
+	.iconsNavList li {padding: 0;}
+}
+@media only screen and (min-width: 600px) {
+	#subHeaderName {font-size: 3.5em;}
+	.overlay{top:100px;}
+	ul#subtitles li{font-size: 2em;}
+}
+@media only screen and (min-width: 768px) {
+	#subHeaderName {font-size: 5em;}
+	ul#subtitles li{font-size: 2.5em;}
+	#subHeader .miniAbout {width: 90%; font-size: 1.3em; height: 14%;}
+}
+@media only screen and (min-width: 992px) {
+	#subHeader .miniAbout {width: 65%; top: 105px; height: 12%;}
+}
+@media only screen and (min-width: 1200px) {
+	#subHeader .miniAbout {width: 50%; height: 11%;}
+}
 
 
 /*************************************/
@@ -375,8 +388,6 @@ a.iconLink:active {
 
 /* For small devices and up */
 @media only screen and (min-width: 600px) {
-	#subHeaderName {font-size: 3em; padding-bottom: .5em;}
-	.overlay{top:100px;}
 }
 
 /* For medium devices and up */
@@ -393,18 +404,14 @@ a.iconLink:active {
     .col-10 {width: 83.33%;}
     .col-11 {width: 91.66%;}
     .col-12 {width: 100%;}
-
-    .overlay{}
 }
 
 /* For large devices and up */
 @media only screen and (min-width: 992px) {
-	.overlay{}
 }
 
 /* For extra large devices and up*/
 @media only screen and (min-width: 1200px) {
-	.overlay{}
 }
 
 
