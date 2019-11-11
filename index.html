@@ -80,36 +80,24 @@
 
 		<!-- collapisble inspo from: https://www.w3schools.com/howto/howto_js_collapsible.asp -->
 		<script>
-	        var coll = document.getElementsByClassName("collapsible"); // coll stores a list of elements
-	        var i;
+      var coll = document.getElementsByClassName("collapsible"); // coll stores a list of elements
+      var i;
 
-	        for (i = 0; i < coll.length; i++) { // loop through all collapsible elements
-	            coll[i].addEventListener("click", function () {
-	                this.classList.toggle("active");
-	                var content = this.nextElementSibling; // this should be its .collabsibleContent sibling
-	                if (content.style.maxHeight) {
-	                    content.style.maxHeight = null;
-	                } else {
-	                    content.style.maxHeight = content.scrollHeight + "px";
-	                }
-	            });
-	        }
-	    </script>
+      for (i = 0; i < coll.length; i++) { // loop through all collapsible elements
+          coll[i].addEventListener("click", function () {
+              this.classList.toggle("active");
+              var content = this.nextElementSibling; // this should be its .collabsibleContent sibling
+              if (content.style.maxHeight) {
+                  content.style.maxHeight = null;
+              } else {
+                  content.style.maxHeight = content.scrollHeight + "px";
+              }
+          });
+      }
+	  </script>
 
     	</nav>
-	</header>
-
-    <!-- Header -->
-<!--     <header class="col-12">
-      <div class="container">
-         <h1 id="name"><a class="nameLink" href="/">AriaRay Brown</a></h1>
-         <ul class="container" id="subtitles">
-            <li>Linguist</li>
-            <li>Designer</li>
-            <li>Developer</li>
-         </ul>
-      </div>
-    </header> -->
+	  </header>
 
     <!-- Main Page Content -->
     <main>
