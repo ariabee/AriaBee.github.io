@@ -1,5 +1,5 @@
 # Portfolio for AriaRay Brown
-## Linguist . Designer . Developer . Happy to solve it.
+## Linguist .  Designer .  Developer .  Happy to solve it
 * Projects
 * About
 * Contact
