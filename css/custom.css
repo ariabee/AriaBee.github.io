@@ -13,7 +13,6 @@
  @import url('https://fonts.googleapis.com/css?family=Cardo|Sacramento&display=swap');
 
  @import url("reset.css");
- /*@import url("bootstrap-snippets.css");*/
 
 /**************************************/
 /* SITE CONSTANTS (in progress study) */
@@ -109,8 +108,8 @@ main {
   padding: 2em;
 }
 
-main section {
-  margin: 0 5vw;
+main section:not(#subHeader):not(#about) {
+  margin: 0 5vw 7vw;
 }
 
 p#copyright {text-align: center;}
@@ -180,19 +179,20 @@ p#copyright {text-align: center;}
 
 .mobileNav {
   position: absolute;
-  background: #464040;
+  background: #000008e8;
   width: 100%;
   text-align: center;
   top: 4.25em;
   -webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.35);
   box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.35);
+  z-index: 10;
 }
 
 .mobileNav li {
 	padding: 1.5em;
-	font-size: 1.2em;
-  font-family: var(--h1-font);
-  letter-spacing: 2px;
+	font-size: 1.5em;
+  /*font-family: var(--h1-font);*/
+  letter-spacing: 0.15em;
 }
 
 .navBar {
@@ -333,11 +333,10 @@ ul#subtitles {
 }
 
 ul#subtitles li {
-  	display: inline;
-  	font-style: italic;
+  display: inline;
+  font-style: italic;
 	display: inline;
 	font-style: italic;
-	font-family: var(--h1-font);
 	font-size: 1.2em;
 	padding: .25em;
 }
@@ -392,10 +391,19 @@ ul#subtitles li {
 
 @media (max-width: 992px) {
   .galleryRow .lastOdd-md {
-      max-width: 100%;
-      flex: 0 0 100%;
-      text-align: center;
+    
   }
+}
+
+/***************/
+/*    ABOUT    */
+/***************/
+
+section#about {
+  background: #af5c29;
+  margin: 0;
+  padding: 7vw 5vw;
+  color: #f9f9f9;
 }
 
 /*************************************/
