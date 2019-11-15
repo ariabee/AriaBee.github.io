@@ -8,3 +8,5 @@
 A project portfolio. An exploration of website building and design "from scratch" (and some helpful resources).
 
 [View Site](https://ariabee.github.io "AriaRay's Portfolio")
+
+**_Currently in progress... :)_**
