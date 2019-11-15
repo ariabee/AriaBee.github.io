@@ -10,6 +10,7 @@
  @import url('https://fonts.googleapis.com/css?family=Open+Sans');
  @import url('https://fonts.googleapis.com/css?family=Averia+Serif+Libre');
  @import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great&display=swap');
+ @import url('https://fonts.googleapis.com/css?family=Cardo|Sacramento&display=swap');
 
  @import url("reset.css");
  /*@import url("bootstrap-snippets.css");*/
@@ -20,27 +21,6 @@
 /**************************************/
 
 :root {
-  --blue: #007bff;
-  --indigo: #6610f2;
-  --purple: #6f42c1;
-  --pink: #e83e8c;
-  --red: #dc3545;
-  --orange: #fd7e14;
-  --yellow: #ffc107;
-  --green: #28a745;
-  --teal: #20c997;
-  --cyan: #17a2b8;
-  --white: #fff;
-  --gray: #6c757d;
-  --gray-dark: #343a40;
-  --primary: #007bff;
-  --secondary: #6c757d;
-  --success: #28a745;
-  --info: #17a2b8;
-  --warning: #ffc107;
-  --danger: #dc3545;
-  --light: #f8f9fa;
-  --dark: #343a40;
   --breakpoint-xs: 0;
   --breakpoint-sm: 576px;
   --breakpoint-md: 768px;
@@ -48,6 +28,8 @@
   --breakpoint-xl: 1200px;
   --h1-font: 'Fredericka the Great', sans-serif;
   --p-font: 'Open Sans', sans-serif;
+  --font1: 'Cardo', serif;
+  --font3: 'Sacramento', cursive;
 }
 
 /***************/
@@ -92,6 +74,20 @@ h1#name {
   text-shadow: -2px 6px 9px rgb(107, 107, 107);
 }
 
+h2 {
+  font-weight: bold;
+  font-size: 4em;
+}
+
+h2 a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h3 {
+  font-size: 3em;
+}
+
 header {
   background: #000008;
   background-image: url(../images/starry.png);
@@ -111,6 +107,10 @@ main {
 #mainPage {
   font-size: 24px;
   padding: 2em;
+}
+
+main section {
+  margin: 0 5vw;
 }
 
 p#copyright {text-align: center;}
@@ -300,7 +300,8 @@ a.iconLink:active {
 }
 
 #subHeader {
-	margin: 2em;
+	padding: 2em;
+  margin: 0;
 }
 
 #subHeader:hover .overlay {
@@ -365,6 +366,38 @@ ul#subtitles li {
 }
 
 
+/***************/
+/*   PROJECTS  */
+/***************/
+
+#projects { 
+  margin: 0 5vw;
+  transition: 400ms ease-in; 
+}
+
+#projects > article {
+    margin: 5vw 0;
+}
+
+.galleryRow [class^="col"] {
+    text-align: center;
+    padding: 0.25rem;
+}
+
+.imgThumbnail {
+  background-color: inherit;
+  height: auto;
+  max-width: 100%;
+}
+
+@media (max-width: 992px) {
+  .galleryRow .lastOdd-md {
+      max-width: 100%;
+      flex: 0 0 100%;
+      text-align: center;
+  }
+}
+
 /*************************************/
 /* STYLE CLASSES                     */
 /* (use class name to style element) */
@@ -374,6 +407,14 @@ ul#subtitles li {
   display: flex;
   flex-wrap: nowrap;
 }
+
+.flexCenter {
+  align-items: center;
+  justify-content: center;
+}
+
+.textLeft {text-align: left;}
+.textRight {text-align: right;}
 
 
 /***********************************/
