@@ -1,11 +1,11 @@
 # Portfolio for AriaRay Brown
-### Linguist .  Designer .  Developer .  Happy to Solve It
+
 * Projects
 * About
 * Contact
 * Resume
 
-A project portfolio. An exploration of website building and design "from scratch" (and some helpful resources).
+A project portfolio. An exploration of website building and design "from scratch" (with the help of some useful resources).
 
 [Visit Site](https://ariabee.github.io "AriaRay's Portfolio")
 
