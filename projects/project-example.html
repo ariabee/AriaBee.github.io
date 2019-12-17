@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="AriaRay Brown">
+    <meta name="description" content="Welcome to the project portfolio of AriaRay Brown">
+
+    <title>AriaRay Brown</title>
+    
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/custom.css" type="text/css">
+    <link rel="stylesheet" href="../css/bootstrap-snippets.css" type="text/css">
+
+    <!-- Thumbnail gallery JavaScript -->
+    <script src="../js/bootstrap-snippets.js" async></script>
+    <script src="../js/jquery.slim.min.js" async></script>
+
+    <!-- Font Awesome kit -->
+    <script src="https://kit.fontawesome.com/ce124eb7b1.js"></script>
+
+    <!-- jQuery -->
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+
+    <!-- JavaScript functions -->
+    <script src="../js/functions.js"></script>
+  
+  </head>
+
+  
+  <body id="pageTop">
+    <div id="content">
+
+    <!-- Header -->	
+    <header>
+    	<nav class="navBar flexBox">
+
+        <!-- Logo -->
+        <div class="headerLogoContainer">
+          <h1 id="headerLogo" class=".logo">AriaRay Brown</h1>
+        </div>
+
+        <!-- Desktop Navigation -->
+        <ul class="mainNav navList">
+            <li>
+                <a href="../index.html#projects" class="navLinks">Projects</a>
+            </li>
+            <li>
+                <a href="../index.html#about" class="navLinks">About</a>
+            </li>
+            <li>
+                <a href="../index.html#contact" class="navLinks">Contact</a>
+            </li>
+            <li>
+                <a href="../resume" class="navLinks">Resume</a>
+            </li>
+        </ul>
+
+        <!-- Mobile Navigation -->
+        <button class="mobileNavToggle collapsible">
+          <i class="fas fa-bars"></i>
+        </button>
+    		
+		<ul class="mobileNav navList collapsibleContent">
+          <li>
+              <a href="../index.html#projects" class="navLinks">Projects</a>
+          </li>
+          <li>
+              <a href="../index.html#about" class="navLinks">About</a>
+          </li>
+          <li>
+              <a href="../index.html#contact" class="navLinks">Contact</a>
+          </li>
+          <li>
+              <a href="../resume" class="navLinks">Resume</a>
+          </li>
+		</ul>
+
+		<!-- collapisble inspo from: https://www.w3schools.com/howto/howto_js_collapsible.asp -->
+		<script>
+      var coll = document.getElementsByClassName("collapsible"); // coll stores a list of elements
+      var i;
+
+      for (i = 0; i < coll.length; i++) { // loop through all collapsible elements
+          coll[i].addEventListener("click", function () {
+              this.classList.toggle("active");
+              var content = this.nextElementSibling; // this should be its .collabsibleContent sibling
+              if (content.style.maxHeight) {
+                  content.style.maxHeight = null;
+              } else {
+                  content.style.maxHeight = content.scrollHeight + "px";
+              }
+          });
+      }
+	  </script>
+
+    	</nav>
+	  </header>
+
+    <!-- Main Page Content -->
+    <main class="project" id="projectExample">
+
+      <article id="theProject">
+        <div id=projectHeader>
+          <h1>Project Example</h1>
+          <div class="briefSummary">
+            <p>This is a brief summary of the project.</p>
+          </div>
+        </div>
+        
+        <div id="projectBody">
+          <h2>A Subheading</h2>
+          <p>This is some project description.</p>
+          <h2>Another Subheading</h2>
+          <p>And this is more.</p>
+          <h2>A Third Subheading</h2>
+          <p>And this is more.</p>
+        </div>
+      <article>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="socialIconsContainer flexBox">
+        
+        <ul id="contact">
+          <li class="socialIcon">
+            <a class="iconSocialEmail" href="mailto:" title="Email">ariaray.brown at gmail dot com</a>
+          </li>
+          <li class="socialIcon">
+            <a class="iconSocialGitHub" href="https://github.com/ariabee" title="GitHub">GitHub</a>
+          </li>
+          <li class="socialIcon">
+            <a class="iconSocialInstagram" href="#https://www.instagram.com/aria_bee/" title="Instagram">Instagram</a>
+          </li>
+        </ul>
+        
+      </div>
+      <p id="copyright">&copy; AriaRay Brown 2019</p>
+    </footer>
+  
+  </div>
+  </body>
+
+</html>
