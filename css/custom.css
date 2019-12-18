@@ -539,6 +539,12 @@ button.submit {
   transform: translateX(50%);
 }
 
+button.submit:focus {
+  outline-color: #ffffffa1;
+  outline-style: dotted;
+  outline-width: 4px;
+}
+
 form {
   margin: .5em auto;
 }
