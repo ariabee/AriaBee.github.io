@@ -193,6 +193,11 @@ button#toTop a:visited {
 	color: #000000;
 }
 
+#headerLogo a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .headerLogoContainer {
   display: inline-block;
   margin: 1em .75em;
