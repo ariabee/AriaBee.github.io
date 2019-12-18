@@ -526,6 +526,35 @@ section#contact {
   background-color: #3d675d;
 }
 
+button.submit {
+  font: inherit;
+  color: #3d675d;
+  background: #ffffff;
+  font-weight: bold;
+  padding: .2em .5em;
+  display: inline-block;
+  border: none;
+  margin: 0;
+  vertical-align: text-top;
+  transform: translateX(50%);
+}
+
+form {
+  margin: .5em auto;
+}
+
+form label {
+  margin: .5em .5em .5em auto;
+  display: inline-block;
+}
+
+form label textarea {
+  vertical-align: text-top;
+  font-size: .75em;
+  font-family: var(--p-font);
+  padding: .5em;
+}
+
 /****************/
 /*    FOOTER    */
 /****************/
