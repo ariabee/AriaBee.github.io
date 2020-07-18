@@ -252,6 +252,7 @@ button#toTop a:visited {
 }
 
 .navBar {
+  padding: .5em 1em;
 }
 
 .mobileNavToggle {
