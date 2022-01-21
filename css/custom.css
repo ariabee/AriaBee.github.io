@@ -8,6 +8,7 @@
 /***********************/
 
  @import url('https://fonts.googleapis.com/css?family=Open+Sans');
+ @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
  @import url('https://fonts.googleapis.com/css?family=Averia+Serif+Libre');
  @import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great&display=swap');
  @import url('https://fonts.googleapis.com/css?family=Cardo|Sacramento&display=swap');
@@ -27,7 +28,7 @@
   --breakpoint-xl: 1200px;
   --title-font: 'Fredericka the Great', serif;
   --p-font: 'Open Sans', sans-serif;
-  --font1: 'Cardo', serif;
+  --font-serif: 'Cardo', serif;
   --font3: 'Sacramento', cursive;
 }
 
@@ -46,13 +47,13 @@ html {
     box-sizing: border-box;
 }
 
-a:link {}
+a:link {  }
 
 a:visited {}
 
 a:hover {}
 
-a:active {}
+a:active { color: #9fa6b0; }
 
 a.nameLink {
   color: white;
@@ -60,6 +61,8 @@ a.nameLink {
   font-size: 57px;
   text-decoration: none; 
 }
+
+b.keyInfo { font-weight: bold; }
 
 body {
   /*background: linear-gradient(126deg, rgba(199, 92, 0, 0.25), #ff9237);*/
@@ -123,6 +126,8 @@ header {
   z-index: 1000;
 }
 
+i { font-style: italic; }
+
 main {
 	transition: all 300ms ease-in-out;
   max-width: 900px;
@@ -144,13 +149,26 @@ main#index section {
   transition: all .8s ease-in-out;
 }
 
+p a:visited, section a:visited { color: #fffcfcb8; text-decoration: none; }
+
+p a:hover { color: #fffcfcb8; }
+
 p#copyright {text-align: center;}
+
+p {margin-bottom: 1em;}
 
 button#toTop a {
   color: #3d675d;
 }
 button#toTop a:visited {
   color: inherit;
+}
+
+section {
+  background-color: #609DA0;
+  padding: 1em;
+  margin: 7vw 5vw;
+  color: #f9f9f9;
 }
 
 
@@ -252,6 +270,7 @@ button#toTop a:visited {
 }
 
 .navBar {
+  padding: .5em 1em;
 }
 
 .mobileNavToggle {
@@ -438,6 +457,10 @@ section#projects {
     margin: 5vw 0;
 }
 
+.container.gallery {
+  margin-top: 1em;
+}
+
 .galleryRow [class^="col"] {
     text-align: center;
     padding: 0.25rem;
@@ -503,6 +526,14 @@ article#theProject {
 @media only screen and (min-width: 768px) {
   .project h1 { font-size: 3em; }
   .project h2 { font-size: 2.5em; }
+}
+
+/**********************/
+/*    PUBLICATIONS    */
+/**********************/
+
+section#publications {
+  background-color: #6e7d5f;
 }
 
 /****************/
@@ -635,6 +666,13 @@ a[class^="iconSocial"]:hover {
 
 .bgColor {background-color: #5f9ea0;}
 
+.bold {font-weight: bold;}
+
+span.highlight {
+  font-weight: bold;
+}
+
+.fontSerif { font-family: var(--font-serif); }
 
 /***********************************/
 /* RESPONSIVE LAYOUT MEDIA QUERIES */
