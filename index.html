@@ -11,7 +11,7 @@
 
     <title>AriaRay Brown</title>
     
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="media/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/custom.css" type="text/css">
     <link rel="stylesheet" href="css/bootstrap-snippets.css" type="text/css">
 
@@ -60,11 +60,11 @@
         </ul>
 
         <!-- Mobile Navigation -->
-        <button class="mobileNavToggle collapsible">
+        <button id="cornerNavToggle" class="mobileNavToggle collapsible">
           <i class="fas fa-bars"></i>
         </button>
     		
-		<ul class="mobileNav navList collapsibleContent">
+		<ul id="cornerNav" class="mobileNav navList collapsibleContent">
           <li>
               <a href="/#projects" class="navLinks">Projects</a>
           </li>
@@ -95,6 +95,7 @@
               }
           });
       }
+
 	  </script>
 
     	</nav>
@@ -117,16 +118,16 @@
     		<nav class="miniNav iconsNav">
     			<ul class="iconsNavList col-5">
     				<li>
-              	<a href="/#projects" class="iconLink" title="Projects"><img src="images/icons/icon-projects.png" alt="Projects" height="60px" width="60px"></a>
+              	<a href="/#projects" class="iconLink" title="Projects"><img src="media/icons/icon-projects.png" alt="Projects" height="60px" width="60px"></a>
           	</li>
           	<li>
-          	    <a href="/#about" class="iconLink" title="About"><img src="images/icons/icon-about.png" alt="About" height="60px" width="60px"></a>
+          	    <a href="/#about" class="iconLink" title="About"><img src="media/icons/icon-about.png" alt="About" height="60px" width="60px"></a>
           	</li>
           	<li>
-           	   <a href="/#contact" class="iconLink" title="Contact"><img src="images/icons/icon-contact.png" alt="Contact" height="60px" width="60px"></a>
+           	   <a href="/#contact" class="iconLink" title="Contact"><img src="media/icons/icon-contact.png" alt="Contact" height="60px" width="60px"></a>
           	</li>
           	<li>
-           	   <a href="/resume" class="iconLink" title="Resume"><img src="images/icons/icon-resume.png" alt="Resume" height="60px" width="60px"></a>
+           	   <a href="/resume" class="iconLink" title="Resume"><img src="media/icons/icon-resume.png" alt="Resume" height="60px" width="60px"></a>
           	</li>
     			</ul>
     		</nav>
@@ -236,35 +237,51 @@
         </article>
 
         <article>
-          <h3>For Fun</h3>
+          <div id="forFunHeading">
+            <h3>For Fun</h3>
+            <span id="forFunToggle" class="italic">(Click to view)</span>
+          </div>
 
-          <div class="container gallery">
+          <div id="forFunGallery" class="container gallery readMore">
             <div class="row galleryRow flexCenter">
               <div class="col-lg-4 col-md-4 col-b-6">
-                <a href="#" class="d-block">
-                  <img class="img-fluid imgThumbnail" src="https://source.unsplash.com/pWkk7iiCoDM/400x300" alt="">
-                </a>
+                <figure class="figure">
+                  <img class="img-fluid imgThumbnail" src="./media/gifs/window-doodle.gif" title="Window Doodle Animation (2019)" alt="Window Doodle Animation (2019)">
+                  <figcaption class="figure-caption">Window Doodle Animation (2019)</figcaption>
+                </figure>
               </div>
               <div class="col-lg-4 col-md-4 col-b-6">
-                <a href="#" class="d-block">
-                  <img class="img-fluid imgThumbnail" src="https://source.unsplash.com/aob0ukAYfuI/400x300" alt="">
-                </a>
+                <figure class="figure">
+                  <img class="img-fluid imgThumbnail" src="./media/gifs/starry-dancer-moon.gif" title="Starry Dancer Moon Animation (2019)" alt="Starry Dancer Moon Animation (2019)">
+                  <figcaption class="figure-caption">Starry Dancer Moon Animation (2019)</figcaption>
+                </figure>
               </div>
               <div class="col-lg-4 col-md-4 col-b-4">
-                <a href="#" class="d-block">
-                  <img class="img-fluid imgThumbnail" src="https://source.unsplash.com/EUfxH-pze7s/400x300" alt="">
-                </a>
+                <figure class="figure">
+                  <img class="img-fluid imgThumbnail" src="./media/gifs/galaxy-skater.gif" title="Galaxy Skater Animation (2021)" alt="Galaxy Skater Animation (2021)">
+                  <figcaption class="figure-caption">Galaxy Skater Animation (2021)</figcaption>
+                </figure>
               </div>
               <div class="col-lg-4 col-md-4 col-b-4">
-                <a href="#" class="d-block">
-                  <img class="img-fluid imgThumbnail" src="https://source.unsplash.com/M185_qYH8vg/400x300" alt="">
-                </a>
+                <figure class="figure">
+                  <img class="img-fluid imgThumbnail" src="./media/art/face-flower-progress.jpg" title="Face Flower Progress (2020)" alt="Face Flower Progress (2020)">
+                  <figcaption class="figure-caption">Face Flower Progress (2020)</figcaption>
+                </figure>
+              </div>
+              <div class="col-lg-4 col-md-4 col-b-4">
+                <figure class="figure">
+                  <img class="img-fluid imgThumbnail" src="./media/art/flosculi.png" title="Flosculi Species (2016)" alt="Flosculi Species (2016)" width="200vw">
+                  <figcaption class="figure-caption">Flosculi Species (2016)</figcaption>
+                </figure>
               </div>
               <div class="col-lg-4 col-md-4 col-b-4 lastOdd-md">
-                <a href="#" class="d-block">
-                  <img class="img-fluid imgThumbnail" src="https://source.unsplash.com/sesveuG_rNo/400x300" alt="">
-                </a>
-              </div>
+                <figure class="figure">
+                  <video controls width="250" poster="./media/art/cropped-building-music-poster.png" title="Cropped Building Music Mash (2019)"/>
+                    <source src="./media/art/cropped-building-music.mp4" type="video/mp4"/>
+                    <img src="./media/art/cropped-building-music-poster.png" alt="Cropped Building Music Mash (2019)"/>
+                  </video>
+                  <figcaption class="figure-caption">Cropped Building Music Mash (2019)</figcaption>
+                </figure>
             </div>
             <!-- /.row -->
           </div>
@@ -280,7 +297,7 @@
           <h2>Publications</h2>
           <ul>
             <li><span class="bold">Apple Core-dination: Linguistic Feedback and Learning in a Speech-to-Action Shared World Game.</span>
-            Susann Boy, AriaRay Brown, and Morgan Wixted. (Workshop: InterNLP at ACL 2021) <i>Interactive Learning for Natural Language Processing</i>. [<a href="https://aclanthology.org/2021.internlp-1.2.pdf" target="_blank">pdf</a>]
+            Susann Boy, AriaRay Brown, and Morgan Wixted. (Workshop: InterNLP at ACL 2021) <i>Interactive Learning for Natural Language Processing</i>. [<a href="https://aclanthology.org/2021.internlp-1.2.pdf" target="_blank">pdf</a>] [<a href="https://youtu.be/0x6ZBAsmyY0" target="_blank">demo</a>]
             </li>
           </ul>
 

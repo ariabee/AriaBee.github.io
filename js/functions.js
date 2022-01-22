@@ -1,17 +1,23 @@
 /*!
-  * Portfolio javascript functions
+  * Javascript functions and tests
   * AriaRay Brown, 9-2019
   */
 
-//function toggleNavBar() {
+window.onload = function(){
+
 	
-let mainNav = document.getElementById('js-menu');
-let navBarToggle = document.getElementById('js-navbar-toggle');
+  let forFunToggle = document.getElementById("forFunToggle");
+  let forFun = document.getElementById("forFunGallery");
 
-navBarToggle.addEventListener('click', function() {
-    
-    mainNav.classList.toggle('active');
-});
+  forFunToggle.addEventListener("click", function() {
 
-//}
+      console.log("clicked!")
+      forFun.classList.toggle("open");
+
+  });
+}
+
+
+
+
 

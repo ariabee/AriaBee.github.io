@@ -449,3 +449,27 @@ img {
     max-width: 100%;
   }
 }
+
+figure {
+  display: block;
+  margin: 0 0 1rem;
+}
+
+.figure {
+  display: inline-block;
+}
+
+.figure-caption {
+  font-size: 90%;
+  margin-top: 0.5em;
+  padding: 2px;
+  background-color: #ffffff75;
+  color: rgba(0, 0, 0, 0.7);
+  font-variant: all-petite-caps;
+}
+
+
+
+
+
+

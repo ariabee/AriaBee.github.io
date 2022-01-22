@@ -47,7 +47,7 @@ html {
     box-sizing: border-box;
 }
 
-a:link {  }
+a:link { color: black }
 
 a:visited {}
 
@@ -116,7 +116,7 @@ h4 {
 
 header {
   background: #ffff;
-  /* background-image: url(../images/starry.png); */
+  /* background-image: url(../media/starry.png); */
   background-position: center -58px;
   background-size: cover;
   /* -webkit-box-shadow: 3px -1px 3px 0px rgba(0, 0, 0, 0.25); */
@@ -155,7 +155,10 @@ p a:hover { color: #fffcfcb8; }
 
 p#copyright {text-align: center;}
 
-p {margin-bottom: 1em;}
+p {
+  margin-bottom: 1em;
+  line-height: 1.5em;
+}
 
 button#toTop a {
   color: #3d675d;
@@ -170,6 +173,7 @@ section {
   margin: 7vw 5vw;
   color: #f9f9f9;
 }
+
 
 
 /**************/
@@ -251,7 +255,7 @@ section {
   position: absolute;
   background-color: #000000e3;
   width: 294px;
-  background-image: url(../images/cookie.jpg);
+  background-image: url(../media/cookie.jpg);
   background-position: center;
   text-align: center;
   top: 25%;
@@ -294,6 +298,10 @@ section {
   color: rgba(0, 0, 0, 0.7);
   background: #ffffffd6;
   font-weight: bold;
+}
+
+a.navLinks:link {
+  color: rgba(0, 0, 0, 0.7);
 }
 
 /*************/
@@ -388,7 +396,7 @@ a.iconLink:active {
 }
 
 #subHeaderName {
-    background-image: url(../images/medina-color1.jpg);
+    background-image: url(../media/medina-color1.jpg);
     background-size: contain;
     background-position: center;
     background-color: #1f0401;
@@ -526,6 +534,27 @@ article#theProject {
 @media only screen and (min-width: 768px) {
   .project h1 { font-size: 3em; }
   .project h2 { font-size: 2.5em; }
+}
+
+#forFunHeading {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+#forFunToggle {
+  margin: auto 5vw;
+  margin-bottom: 0.75em;
+  transition: all 1s ease;
+}
+
+#forFunToggle:hover {
+  letter-spacing: 3px;
+  transition: all 2s ease;
+} 
+
+#forFunGallery {
+
 }
 
 /**********************/
@@ -673,6 +702,17 @@ span.highlight {
 }
 
 .fontSerif { font-family: var(--font-serif); }
+
+.readMore { 
+    max-height: 78px;
+    overflow: hidden; 
+    transition: all 1s;
+  }
+.open { max-height: fit-content; transition: all 1s; }
+
+.italic { font-style: italic; }
+
+
 
 /***********************************/
 /* RESPONSIVE LAYOUT MEDIA QUERIES */
