@@ -362,18 +362,27 @@ a.iconLink:active {
 	display: inline-block;
 	margin: 0 auto;
 	text-align:	center;
+  border-radius: 50px;
 	text-shadow: 0px 3px 3px #463f3f69;
 	padding: 5px;
+  transition: background-color 1s;
 }
 
 .iconsNavList li:hover {
-	border-radius: 50px;
 }
 
 .iconsNavList li:nth-child(1):hover { background-color: #c6726659; }
 .iconsNavList li:nth-child(2):hover { background-color: #be864a45; }
 .iconsNavList li:nth-child(3):hover { background-color: #6c724b33; }
 .iconsNavList li:nth-child(4):hover { background-color: #5d676940; }
+
+.iconsNavList img {
+  transition: transform .7s cubic-bezier(0.2, 0, 0.5, 1.4);
+}
+
+.iconsNavList img:hover {
+  transform: translate(15px, 0px) rotate(15deg);
+}
 
 .overlay {
 	position: absolute;
@@ -385,6 +394,7 @@ a.iconLink:active {
 	opacity: 0;
 	transition: all 1s ease;
 	background-color: inherit;
+  color: #463f3f;
 }
 
 #subHeader {
