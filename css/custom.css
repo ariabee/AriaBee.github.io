@@ -149,10 +149,6 @@ main#index section {
   transition: all .8s ease-in-out;
 }
 
-p a:visited, section a:visited { color: #fffcfcb8; text-decoration: none; }
-
-p a:hover { color: #fffcfcb8; }
-
 p#copyright {text-align: center;}
 
 p {
@@ -173,6 +169,12 @@ section {
   margin: 7vw 5vw;
   color: #f9f9f9;
 }
+
+section a:link {  }
+
+section a:visited { color: #fffcfcb8; text-decoration: none; }
+
+section a:hover { color: #fffcfcb8; }
 
 
 
