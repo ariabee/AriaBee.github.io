@@ -177,7 +177,6 @@ section a:visited { color: #fffcfcb8; text-decoration: none; }
 section a:hover { color: #fffcfcb8; }
 
 
-
 /**************/
 /* NAVIGATION */
 /**************/
@@ -503,7 +502,7 @@ section#projects {
 /***************/
 
 section#about {
-  background-color: #af5c29;
+  background-color: #6e7d5f;
   padding: 1em;
   margin: 7vw 5vw;
   color: #f9f9f9;
@@ -574,7 +573,7 @@ article#theProject {
 /**********************/
 
 section#publications {
-  background-color: #6e7d5f;
+  background-color: #af5c29;
 }
 
 /****************/
