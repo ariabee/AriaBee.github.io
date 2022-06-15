@@ -723,7 +723,9 @@ span.highlight {
 
 .italic { font-style: italic; }
 
-
+.note {
+  font-size: 0.75em;
+}
 
 /***********************************/
 /* RESPONSIVE LAYOUT MEDIA QUERIES */
