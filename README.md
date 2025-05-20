@@ -1,9 +1,10 @@
 # Portfolio for AriaRay Brown
 
-* Projects
 * About
+* Publications
+* Projects
+* Skills
 * Contact
-* Resume
 
 A project portfolio. An exploration of website building and design "from scratch" (with the help of some useful resources).
 

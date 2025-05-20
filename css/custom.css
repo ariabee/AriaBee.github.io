@@ -176,6 +176,10 @@ section a:visited { color: #fffcfcb8; text-decoration: none; }
 
 section a:hover { color: #fffcfcb8; }
 
+.bold {
+  font-weight: bold;
+}
+
 
 /**************/
 /* NAVIGATION */
@@ -553,9 +557,16 @@ article#theProject {
   align-items: center;
 }
 
+#forFunHeading h3 {
+  font-size: 2em;
+  width: 100%;
+  font-weight: bold;
+}
+
 #forFunToggle {
-  margin: auto 5vw;
+  margin: 0 auto;
   margin-bottom: 0.75em;
+  width: 100%; /* put on new line */
   transition: all 1s ease;
 }
 
@@ -574,6 +585,11 @@ article#theProject {
 
 section#publications {
   background-color: #af5c29;
+}
+
+.publication {
+  margin-block-end: 1em;
+  line-height: 1.5;
 }
 
 /****************/
